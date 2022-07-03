@@ -1,17 +1,17 @@
-package com.multiverse.computer_parts.dto.videoCards;
+package com.multiverse.computer_parts.dto.memory;
 
-import java.util.List;
+import com.multiverse.computer_parts.dto.videoCards.DetailsVideoCardDto;
 
-public class VideoCardDto {
+public class MemoryDto {
     private String guid;
     private String type;
     private String name;
-    private DetailsVideoCardDto details;
+    private MemoryDetailsDto details;
 
-    public VideoCardDto() {
+    public MemoryDto() {
     }
 
-    public VideoCardDto(String guid, String type, String name, DetailsVideoCardDto details) {
+    public MemoryDto(String guid, String type, String name, MemoryDetailsDto details) {
         this.guid = guid;
         this.type = type;
         this.name = name;
@@ -42,11 +42,11 @@ public class VideoCardDto {
         this.name = name;
     }
 
-    public DetailsVideoCardDto getDetails() {
+    public MemoryDetailsDto getDetails() {
         return details;
     }
 
-    public void setDetails(DetailsVideoCardDto details) {
+    public void setDetails(MemoryDetailsDto details) {
         this.details = details;
     }
 }
