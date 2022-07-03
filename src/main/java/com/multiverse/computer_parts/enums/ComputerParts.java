@@ -12,6 +12,24 @@ public enum ComputerParts {
             jsonVideoCards = app.getFileFromResource(fileName);
             return jsonVideoCards;
         }
+    },
+    PROCESSORS {
+        public String json() {
+            String jsonProcessors = "";
+            FileResourcesUtils app = new FileResourcesUtils();
+            String fileName = "static/json/computerParts/processors/processors.json";
+            jsonProcessors = app.getFileFromResource(fileName);
+            return jsonProcessors;
+        }
+    },
+    MEMORY {
+        public String json() {
+            String jsonMemory = "";
+            FileResourcesUtils app = new FileResourcesUtils();
+            String fileName = "static/json/computerParts/memory/memory.json";
+            jsonMemory = app.getFileFromResource(fileName);
+            return jsonMemory;
+        }
     };
 
     public abstract String json();
