@@ -1,0 +1,20 @@
+[
+  {
+    "guid": "1",
+    "type": "Оперативная память",
+    "name": "Kingston 8 GB",
+    "details": {
+      "fullName": "Оперативная память Kingston 8 GB",
+      "valueMemory": "8 GB"
+    }
+  },
+  {
+    "guid": "2",
+    "type": "Оперативная память",
+    "name": "Kingston 16 GB",
+    "details": {
+      "fullName": "Оперативная память Kingston 16 GB",
+      "valueMemory": "16 GB"
+    }
+  }
+]
