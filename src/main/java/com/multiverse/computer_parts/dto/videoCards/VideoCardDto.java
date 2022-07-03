@@ -1,17 +1,21 @@
 package com.multiverse.computer_parts.dto.videoCards;
 
+import java.util.List;
+
 public class VideoCardDto {
     private String guid;
     private String type;
     private String name;
+    private DetailsVideoCardDto details;
 
     public VideoCardDto() {
     }
 
-    public VideoCardDto(String guid, String type, String name) {
+    public VideoCardDto(String guid, String type, String name, DetailsVideoCardDto details) {
         this.guid = guid;
         this.type = type;
         this.name = name;
+        this.details = details;
     }
 
     public String getGuid() {
@@ -36,5 +40,13 @@ public class VideoCardDto {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public DetailsVideoCardDto getDetails() {
+        return details;
+    }
+
+    public void setDetails(DetailsVideoCardDto details) {
+        this.details = details;
     }
 }
