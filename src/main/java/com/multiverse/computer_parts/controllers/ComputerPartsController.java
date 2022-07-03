@@ -1,6 +1,7 @@
 package com.multiverse.computer_parts.controllers;
 
 import com.multiverse.computer_parts.dto.videoCards.VideoCardDto;
+import com.multiverse.computer_parts.enums.ComputerParts;
 import com.multiverse.computer_parts.service.FileResourcesUtils;
 import com.multiverse.computer_parts.service.SerializationService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +23,8 @@ public class ComputerPartsController {
     @GetMapping("/videocards/list")
     public ResponseEntity<Object> getVideoCards(){
         VideoCardDto[]  videoCardDtoList= null;
-        String jsonVideoCards = "";
-        FileResourcesUtils app = new FileResourcesUtils();
-        String fileName = "static/json/computerParts/videoCards/videoCards.json";
-        jsonVideoCards = app.getFileFromResource(fileName);
+        ComputerParts computerPartsEnums = ComputerParts.VIDEO_CARDS;
+        String jsonVideoCards = computerPartsEnums.json();
         videoCardDtoList = serializationService.serializeVideoCards(jsonVideoCards);
         return ResponseEntity.ok(videoCardDtoList);
     }
