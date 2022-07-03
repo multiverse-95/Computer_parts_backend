@@ -1,0 +1,22 @@
+[
+  {
+    "guid": "1",
+    "type": "Процессор",
+    "name": "Ryzen 3700",
+    "details": {
+      "fullName": "Процессор AMD Ryzen 3700",
+      "manufacturer": "AMD",
+      "clockFrequency": "4 Ghz"
+    }
+  },
+  {
+    "guid": "2",
+    "type": "Процессор",
+    "name": "Ryzen 3500",
+    "details": {
+      "fullName": "Процессор AMD Ryzen 3500",
+      "manufacturer": "AMD",
+      "clockFrequency": "4 Ghz"
+    }
+  }
+]

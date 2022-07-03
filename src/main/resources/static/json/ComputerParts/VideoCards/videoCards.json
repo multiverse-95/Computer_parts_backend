@@ -1,0 +1,24 @@
+[
+  {
+    "guid": "1",
+    "type": "Видеокарта",
+    "name": "RTX 3070",
+    "details": {
+      "fullName": "Видеокарта MSI GeForce RTX 3070 SUPRIM [RTX 3070 SUPRIM 8G]",
+      "manufacturer": "MSI",
+      "videoMemorySize": "8 GB",
+      "busBitWidth": "256 Bit"
+    }
+  },
+  {
+    "guid": "2",
+    "type": "Видеокарта",
+    "name": "RTX 3070",
+    "details": {
+      "fullName": "Видеокарта MSI GeForce RTX 3080 [RTX 3070 8G]",
+      "manufacturer": "MSI",
+      "videoMemorySize": "8 GB",
+      "busBitWidth": "256 Bit"
+    }
+  }
+]
